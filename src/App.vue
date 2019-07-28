@@ -1,19 +1,21 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ThrottleDebounce />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ThrottleDebounce from './components/ThrottleDebounce.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ThrottleDebounce
   }
 }
+
 </script>
 
 <style>
@@ -24,5 +26,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column; justify-content: center; align-items: center;
 }
 </style>
